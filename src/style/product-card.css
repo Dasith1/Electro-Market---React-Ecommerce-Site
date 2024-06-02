@@ -1,0 +1,33 @@
+.product__info h3{
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-top: 15px;
+}
+.product__img img{
+    width: auto;
+    height: 250px;
+    align-content: center;
+}
+
+.product__card-bottom span{
+    background-color: grays;
+    padding: 5px;
+}
+.product__info h3 {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-top: 15px;
+    text-decoration: none;  
+}
+
+.product__info h3 a {
+    text-decoration: none;  
+    color: inherit;  
+}
+
+
+.product__info h3 :hover{
+    color: rgb(89, 42, 201);
+}

@@ -1,0 +1,19 @@
+.service__item {
+    padding: 20px;
+    background: var(--card-bg-01);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;  
+    flex-direction: row;  
+ 
+}
+
+.service__item span {
+    font-size: 2.2rem;
+    background-color: white;
+    border-radius: 3rem;
+}
+
+.service__item h3{
+    font-size: 20px;
+}

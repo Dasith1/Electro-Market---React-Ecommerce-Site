@@ -1,0 +1,55 @@
+.hero__section{
+    background: var(--hero-bg);
+}
+.hero__section {
+    padding: 60px 0;
+  }
+  
+  .hero__content {
+    margin-top: 50px;
+  }
+  
+  .hero__subtitle {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .hero__content h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #000;
+  }
+  
+  .banner1-para {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .buy__btn {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .buy__btn:hover {
+    padding: 10px 20px;
+    background-color: #f90b5e;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  .hero__img {
+    display: flex;
+    justify-content: flex-end;  
+    align-items: center;
+  }
+  
+  .hero__img img {
+    width: 100%;  
+    height: auto;
+    object-fit: contain; 
+  }
+  
