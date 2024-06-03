@@ -2,13 +2,15 @@ import React,{useEffect,useRef,useState }from "react";
 import "./header.css";
 import { Container } from "reactstrap";
 import logo from "../../assets/market-logo.png";
-import { NavLink } from "react-router-dom";
+import { NavLink ,useNavigate} from "react-router-dom";
 
 import { RiShoppingBag4Line } from "react-icons/ri";
 import { FaRegHeart } from "react-icons/fa";
 import userlogo from '../../assets/user.png';
 import { IoBagOutline } from "react-icons/io5";
 import {motion} from 'framer-motion'
+
+import { useSelector } from "react-redux";
 
 const nav__links=[
   {
@@ -31,8 +33,10 @@ const nav__links=[
 function Header() {
 
   const headerRef =useRef(null);
-
+  const totalQuantity = useSelector(state=>state.cart.totalQuantity)
+  
   const menuRef = useRef(null);
+  const navigate =useNavigate();
 
   const stickyHeaderFunc =()=>{
     window.addEventListener('scroll',()=>{
@@ -52,7 +56,9 @@ useEffect(()=>{
 
 const menuToggle =()=> menuRef.current.classList.toggle('active__menu');
 
-
+const navigateToCart =() =>{
+  navigate("/cart")
+}
   return (
     <header className="header">
       <Container className="nav_wrapper">
@@ -83,8 +89,8 @@ const menuToggle =()=> menuRef.current.classList.toggle('active__menu');
           </span>
          
           <span className="cart__icon"> 
-          <IoBagOutline />
-          <span className="badge">2</span>
+          <IoBagOutline onClick={navigateToCart} />
+          <span className="badge" >{totalQuantity}</span>
           </span>
           <span>
             <motion.img src={userlogo} whileTap={{scale:1.2}} alt="user logo"/>
