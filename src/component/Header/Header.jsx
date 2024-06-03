@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect,useRef,useState }from "react";
 import "./header.css";
 import { Container } from "reactstrap";
 import logo from "../../assets/market-logo.png";
@@ -27,7 +27,32 @@ const nav__links=[
 ]
 
 
+
 function Header() {
+
+  const headerRef =useRef(null);
+
+  const menuRef = useRef(null);
+
+  const stickyHeaderFunc =()=>{
+    window.addEventListener('scroll',()=>{
+      if(document.body.scrollTop > 80 || document.documentElement.scrollTop>80){
+        headerRef.current.classList.add('sticky__header')
+      }else{
+        headerRef.current.classList.add('sticky__header')
+      }
+    })
+  }
+
+useEffect(()=>{
+  stickyHeaderFunc();
+  return()=> window.removeEventListener('scroll',stickyHeaderFunc);
+});
+
+
+const menuToggle =()=> menuRef.current.classList.toggle('active__menu');
+
+
   return (
     <header className="header">
       <Container className="nav_wrapper">
@@ -39,7 +64,7 @@ function Header() {
           </div>
         </div>
 
-        <div className="navigation">
+        <div className="navigation" ref={menuRef} onClick={menuToggle}>
           <ul className="menu">
             {
               nav__links.map((item,index)=>(
@@ -67,7 +92,7 @@ function Header() {
         </div>
 
         <div className="mobile__menu">
-          <span>
+          <span onClick={menuToggle}>
             <i className="ri-menu-line"></i>
           </span>
         </div>
