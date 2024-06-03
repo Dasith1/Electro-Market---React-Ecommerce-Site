@@ -1,55 +1,263 @@
-.hero__section{
-    background: var(--hero-bg);
-}
 .hero__section {
-    padding: 60px 0;
-  }
-  
-  .hero__content {
-    margin-top: 50px;
-  }
-  
-  .hero__subtitle {
-    font-size: 20px;
-    color: #333;
-  }
-  
-  .hero__content h2 {
-    font-size: 36px;
-    font-weight: 700;
-    color: #000;
-  }
-  
-  .banner1-para {
-    font-size: 16px;
-    color: #555;
-  }
-  
-  .buy__btn {
-    padding: 10px 20px;
-    background-color: #000;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .buy__btn:hover {
-    padding: 10px 20px;
-    background-color: #f90b5e;
-    color: #fff;
-    border: none;
-    cursor: pointer;
+  background: var(--hero-bg);
+}
+
+.hero__section {
+  padding: 60px 0;
+}
+
+.hero__content {
+  margin-top: 50px;
+}
+
+.hero__subtitle {
+  font-size: 20px;
+  color: #333;
+}
+
+.hero__content h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #000;
+}
+
+.banner1-para {
+  font-size: 16px;
+  color: #555;
+}
+
+.buy__btn {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.buy__btn:hover {
+  padding: 10px 20px;
+  background-color: #f90b5e;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.hero__img {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hero__img img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.timer__counter {
+  background-color: #000;
+  height: 600px;
+}
+
+.timer__counter img {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.clock__top-content h4 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.buy__btn-banner {
+  text-decoration: none;
+  background-color: #4a4141;
+  color: #fff;
+  width: 40%;
+  height: auto;
+  margin: 20px;
+  border-radius: 2rem;
+}
+
+.buy__btn-banner a {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.buy__btn-banner:hover {
+  background-color: brown;
+}
+
+@media only screen and (max-width: 1200px) {
+  .clock__top-content h4 {
+    font-size: 50px;
   }
 
-  .hero__img {
-    display: flex;
-    justify-content: flex-end;  
-    align-items: center;
+  .buy__btn-banner {
+    width: 50%;
   }
-  
-  .hero__img img {
-    width: 100%;  
-    height: auto;
-    object-fit: contain; 
+
+  .buy__btn-banner a {
+    font-size: 25px;
   }
-  
+}
+
+@media only screen and (max-width: 992px) {
+  .hero__content h2 {
+    font-size: 2rem;
+  }
+
+  .clock__top-content h4 {
+    font-size: 40px;
+  }
+
+  .buy__btn-banner {
+    width: 60%;
+  }
+
+  .buy__btn-banner a {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero__content h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero__content p {
+    font-size: 0.9rem;
+  }
+
+  .buy__btn {
+    font-size: 0.9rem;
+  }
+
+  .clock__top-content h4 {
+    font-size: 30px;
+  }
+
+  .buy__btn-banner {
+    width: 70%;
+  }
+
+  .buy__btn-banner a {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .hero__content h2 {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+  }
+
+  .hero__content p {
+    font-size: 0.8rem;
+  }
+
+  .buy__btn {
+    font-size: 0.8rem;
+  }
+
+  .clock__top-content h4 {
+    font-size: 25px;
+  }
+
+  .buy__btn-banner {
+    width: 80%;
+  }
+
+  .buy__btn-banner a {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .hero__content h2 {
+    font-size: 1rem;
+  }
+
+  .hero__content p {
+    font-size: 0.7rem;
+  }
+
+  .buy__btn {
+    font-size: 0.7rem;
+  }
+
+  .clock__top-content h4 {
+    font-size: 20px;
+  }
+
+  .buy__btn-banner {
+    width: 90%;
+  }
+
+  .buy__btn-banner a {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .hero__content h2 {
+    font-size: 0.8rem;
+  }
+
+  .hero__content p {
+    font-size: 0.6rem;
+  }
+
+  .buy__btn {
+    font-size: 0.6rem;
+  }
+
+  .clock__top-content h4 {
+    font-size: 18px;
+  }
+
+  .buy__btn-banner {
+    width: 100%;
+  }
+
+  .buy__btn-banner a {
+    font-size: 12px;
+  }
+}
+
+/* Services section responsive adjustments */
+@media only screen and (max-width: 992px) {
+  .service__item span i {
+    font-size: 1.8rem;
+    padding: 4px;
+  }
+
+  .service__item h3 {
+    font-size: 1rem;
+  }
+
+  .service__item {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .service__item {
+    margin-bottom: 1.5rem;
+  }
+
+  .service__item span i {
+    font-size: 1.5rem;
+    padding: 5px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .service__item p {
+    font-size: 0.9rem;
+    margin-top: 5px;
+    color: black;
+  }
+}
