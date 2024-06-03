@@ -8,7 +8,7 @@ function Clock() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      const destination = new Date('Jun 10, 2024').getTime();
+      const destination = new Date('july 1, 2024').getTime();
       const now = new Date().getTime();
       const difference = destination - now;
 
