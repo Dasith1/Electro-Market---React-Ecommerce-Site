@@ -1,0 +1,89 @@
+:root {
+  --primary-color: #0f1010; 
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+.auth__form {
+  background-color: rgb(79, 120, 120);
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.auth__form .form__group {
+  margin-bottom: 15px;
+}
+
+.auth__form input[type="email"],
+.auth__form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.auth__form input[type="email"]:focus,
+.auth__form input[type="password"]:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.auth__btn {
+  background: white;
+  color: var(--primary-color);
+  font-weight: 600;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auth__btn:hover {
+  background-color: #e6e6e6;
+}
+
+.auth__form p {
+  margin-top: 30px;
+  color: white;
+}
+
+.auth__form p a {
+  color: white;
+  text-decoration: underline;
+}
+
+h3 {
+  color: var(--primary-color);
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.auth__form input[type='file']{
+    
+}

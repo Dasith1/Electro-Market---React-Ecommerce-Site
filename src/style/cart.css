@@ -1,0 +1,38 @@
+
+.table tr td img{
+    width: 60px !important;
+    height: 60px !important;
+    object-fit: cover;
+}
+
+.backshoppingbtn  {
+    text-decoration: none;
+    background-color: #0c0430;
+    color: #a78787;
+    width: 150px;
+    height: auto;
+    margin: 20px;
+    border-radius: 2rem;
+   
+}
+
+.backshoppingbtn a{
+ text-decoration: none;
+ color: #ffffff;
+}
+
+.checkout {
+    text-decoration: none;
+    background-color: #0c0430;
+    color: #a78787;
+    width: 150px;
+    height: auto;
+    margin: 20px;
+    border-radius: 2rem;
+   
+}
+
+.checkout a{
+ text-decoration: none;
+ color: #ffffff;
+}
